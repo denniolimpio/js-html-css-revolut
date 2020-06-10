@@ -1,0 +1,93 @@
+/* reset */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* layout */
+.wrapper {
+  width: 60%;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* classi generali */
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+}
+a, i {
+  color: #a6acb2;
+
+}
+sup {
+color: #ec008d;
+}
+
+.violet-btn  {
+  display: inline-block;
+  background-color: #ec008d;
+  border-radius: 30px;
+  padding: 8px 25px;
+  color: white;
+}
+
+
+
+/* HEADER | Menu */
+
+.menubar {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 40px;
+  justify-content: space-between;
+ }
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu li {
+  display: inline-block;
+  position: relative;
+}
+.menu li a:hover {
+  color: black;
+}
+.menu li a.violet-btn:hover {
+  color: white;
+}
+
+
+.nav-left .menu li, .nav-right .menu li {
+  margin-right: 25px;
+}
+
+.logo {
+  width: 110px;
+}
+
+
+/* dropdown */
+
+.dropdown.active {
+  display: block;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    width: 150px;
+    right: -80px;
+    box-shadow: 0px 15px 23px -21px rgba(0,0,0,0.64);
+}
+
+.dropdown li {
+  margin: 20px 0;
+}
