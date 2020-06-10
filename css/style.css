@@ -31,6 +31,7 @@ color: #ec008d;
 }
 
 .violet-btn  {
+  display: inline-block;
   background-color: #ec008d;
   border-radius: 30px;
   padding: 8px 25px;
@@ -41,7 +42,7 @@ color: #ec008d;
 
 .menubar {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   margin: 40px 0;
  }
