@@ -1,8 +1,7 @@
 $(document).ready(
 
   function(){
-
-// DEBUG
+// Se passo con il mouse su un elemento con dropdown (non visibile) questo appare.
 $(".with-dropdown").mouseenter(
   function(){
 
@@ -10,6 +9,8 @@ $(this).children(".dropdown").addClass("active");
 
 
 });
+
+// Se sposto  il mouse da un elemento con dropdown visibile  questo si chiude
 
 $(".with-dropdown").mouseleave(
 
@@ -19,7 +20,8 @@ $(".with-dropdown").mouseleave(
 });
 
 
-// Con un doppio click chiudo il menu se è aperto, altrimenti lo chiudo.
+// Con un doppio click chiudo il menu a comparsa se è aperto,
+// altrimenti lo apro.
 
 $(".with-dropdown").dblclick(
 
