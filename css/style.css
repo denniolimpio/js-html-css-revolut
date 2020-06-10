@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -17,7 +16,6 @@ body {
   margin: auto;
   font-family: 'Roboto', sans-serif;
 }
-
 /* classi generali */
 
 a {
@@ -33,26 +31,24 @@ color: #ec008d;
 }
 
 .violet-btn  {
-  display: inline-block;
   background-color: #ec008d;
   border-radius: 30px;
   padding: 8px 25px;
   color: white;
 }
 
-
-
 /* HEADER | Menu */
 
 .menubar {
   display: flex;
   flex-flow: row wrap;
-  margin-top: 40px;
   justify-content: space-between;
+  margin: 40px 0;
  }
 .menu {
   display: flex;
   align-items: center;
+
 }
 .menu li {
   display: inline-block;
@@ -65,7 +61,13 @@ color: #ec008d;
   color: white;
 }
 
+.nav-left a {
+  text-transform: uppercase;
+}
 
+.nav-left,.nav-right {
+  display: flex;
+}
 .nav-left .menu li, .nav-right .menu li {
   margin-right: 25px;
 }
@@ -73,13 +75,8 @@ color: #ec008d;
 .logo {
   width: 110px;
 }
-
-
 /* dropdown */
 
-.dropdown.active {
-  display: block;
-}
 .dropdown{
     display: none;
     position: absolute;
@@ -88,6 +85,9 @@ color: #ec008d;
     box-shadow: 0px 15px 23px -21px rgba(0,0,0,0.64);
 }
 
+.dropdown.active {
+  display: block;
+}
 .dropdown li {
   margin: 20px 0;
 }
