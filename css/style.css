@@ -7,20 +7,21 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
-}
 
+}
 
 /* layout */
-.wrapper {
-  width: 60%;
-  margin: auto;
-  font-family: 'Roboto', sans-serif;
+
+header {
+  height: 100px;
+  margin: 40px 0;
 }
+
 /* classi generali */
 
 a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 17px;
 }
 a, i {
   color: #a6acb2;
@@ -28,6 +29,9 @@ a, i {
 }
 sup {
 color: #ec008d;
+}
+img {
+  width: 100%;
 }
 
 .violet-btn  {
@@ -41,10 +45,12 @@ color: #ec008d;
 /* HEADER | Menu */
 
 .menubar {
+  width: 1280px;
+  height: 100%;
+  margin: auto;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  margin: 40px 0;
  }
 .menu {
   display: flex;
@@ -72,9 +78,12 @@ color: #ec008d;
 .nav-left .menu li, .nav-right .menu li {
   margin-right: 25px;
 }
+.nav-left .menu li:last-child, .nav-right .menu li:last-child{
+  margin-right: 0;
+}
 
 .logo {
-  width: 110px;
+  width: 100px;
 }
 /* dropdown */
 

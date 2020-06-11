@@ -1,5 +1,6 @@
 $(document).ready(
 
+
   function(){
 // Se passo con il mouse su un elemento con dropdown (non visibile) questo appare.
 $(".with-dropdown").mouseenter(
@@ -35,6 +36,10 @@ $(".with-dropdown").dblclick(
 
   }
 })
+
+// Se "IT" è attivo l'icona freccia punta verso l'alto, altrimenti verso il basso
+
+
 
 
 
