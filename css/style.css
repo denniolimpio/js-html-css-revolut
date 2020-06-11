@@ -14,9 +14,13 @@ body {
 
 header {
   height: 100px;
-  margin: 40px 0;
+  margin: 30px 0;
 }
 
+.wrapper {
+  width: 1280px;
+  margin: auto;
+}
 /* classi generali */
 
 a {
@@ -25,7 +29,10 @@ a {
 }
 a, i {
   color: #a6acb2;
+}
 
+.nav-right .menu  i {
+  font-size: 10px;
 }
 sup {
 color: #ec008d;
@@ -36,22 +43,34 @@ img {
 
 .violet-btn  {
   display: inline-block;
+  color: #fff;
   background-color: #ec008d;
   border-radius: 30px;
   padding: 8px 25px;
-  color: white;
+  opacity: 0.8;
+  transition: 0.3s;
+
 }
+
+/* Hover */
+
+a:hover:not(.violet-btn) {
+  color: #000;
+}
+.menu li .violet-btn:hover {
+  opacity: 1;
+}
+
 
 /* HEADER | Menu */
 
 .menubar {
-  width: 1280px;
   height: 100%;
-  margin: auto;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
  }
+
 .menu {
   display: flex;
   align-items: center;
@@ -61,12 +80,7 @@ img {
   display: inline-block;
   position: relative;
 }
-.menu li a:hover {
-  color: black;
-}
-.menu li a.violet-btn:hover {
-  color: white;
-}
+
 
 .nav-left a {
   text-transform: uppercase;
@@ -76,22 +90,27 @@ img {
   display: flex;
 }
 .nav-left .menu li, .nav-right .menu li {
-  margin-right: 25px;
+  padding-right: 25px;
 }
-.nav-left .menu li:last-child, .nav-right .menu li:last-child{
-  margin-right: 0;
+.menu li:last-child {
+  padding-right: 0;
 }
 
 .logo {
   width: 100px;
 }
+
+/* .reverse {
+  transform: rotate(180deg);
+  color: #000;
+} */
 /* dropdown */
 
 .dropdown{
     display: none;
     position: absolute;
-    width: 150px;
-    right: -80px;
+    top: 100%;
+    left: 0;
     box-shadow: 0px 15px 23px -21px rgba(0,0,0,0.64);
 }
 
@@ -99,5 +118,11 @@ img {
   display: block;
 }
 .dropdown li {
-  margin: 20px 0;
+  display: block;
+  padding: 15px 0;
+}
+
+/* in questo modo gli elementi della lista non si affiancano(N.B bisogna mettere display block alle li del dropdown) */
+.dropdown a{
+  white-space: nowrap;
 }

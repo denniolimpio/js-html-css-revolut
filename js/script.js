@@ -37,10 +37,4 @@ $(".with-dropdown").dblclick(
   }
 })
 
-// Se "IT" è attivo l'icona freccia punta verso l'alto, altrimenti verso il basso
-
-
-
-
-
 });
